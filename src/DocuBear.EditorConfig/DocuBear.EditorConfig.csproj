@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<PackageId>MyPackeIdHere</PackageId>
+		<Authors>DocuBear</Authors>
+		<Version>1.0.5</Version>
+		<Company>DocuBear</Company>
+		<Product>DocuBear.EditorConfig</Product>
+		<IsPackable>true</IsPackable>
+		<Description>This is an example description!</Description>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<NoDefaultExcludes>true</NoDefaultExcludes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="DocuBear.EditorConfig.props" Pack="true" PackagePath="\build" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update=".editorconfig" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+</Project>
